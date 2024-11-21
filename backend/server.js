@@ -10,7 +10,7 @@ const app = express();
 dotenv.config();
 app.use(express.json())
 
-const allowedOrigin = 'https://ecommerce-app-git-main-goksyfreshs-projects.vercel.app/';
+const allowedOrigin = 'https://ecommerce-app-git-main-goksyfreshs-projects.vercel.app';
 
 app.use(cors({
   origin: allowedOrigin,
