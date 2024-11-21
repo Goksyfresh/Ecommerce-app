@@ -10,7 +10,13 @@ const app = express();
 dotenv.config();
 app.use(express.json())
 
-app.use(cors())
+const allowedOrigin = 'https://ecommerce-app-git-main-goksyfreshs-projects.vercel.app/';
+
+app.use(cors({
+  origin: allowedOrigin,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Add allowed HTTP methods
+  credentials: true, // If your requests include cookies
+}));
 
 const PORT = process.env.PORT;
 
