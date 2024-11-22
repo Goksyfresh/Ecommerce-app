@@ -1,1 +1,1 @@
-export const baseUrl= 'https://ecommerce-app-jet-nine.vercel.app'
+export const baseUrl= 'https://ecommerce-app-hgy9.onrender.com'
